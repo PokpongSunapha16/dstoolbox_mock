@@ -1,0 +1,7 @@
+<h1>course list</h1>
+<ul>
+    {% for course in courses %}
+        <a href ="{% url 'update' pk=course.id %}">update</a>
+        <li>course ID:{{ course.id }}, course Name:{{ course.name }}</li>
+    {% endfor %}
+</ul>
